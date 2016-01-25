@@ -1,0 +1,26 @@
+package exercise07;
+
+public class MyFirstProgram {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		System.out.println("Eclipse is powerful.");
+		System.out.println(" /////////////");
+		System.out.println(" -------------");
+		System.out.println(" | ===   === |");
+		System.out.println(" |  0     0  |");
+		System.out.println("(|     ||    |)");
+		System.out.println(" |    (nn)   |");
+		System.out.println(" |           |");
+		System.out.println(" |   ------  |");
+		System.out.println("  \\_________/");
+		
+		
+		
+	}
+
+}

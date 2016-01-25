@@ -1,0 +1,13 @@
+package L9;
+
+public class evenORodd {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

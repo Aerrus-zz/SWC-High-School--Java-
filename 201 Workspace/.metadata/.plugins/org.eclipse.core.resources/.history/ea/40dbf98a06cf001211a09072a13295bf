@@ -1,0 +1,17 @@
+package e3;
+
+public class SavingsAccount(double inBalance, double inInterest)
+	{
+	balance = inBalance;
+	
+	}
+
+	
+	public void addInterest()
+	{
+		this.balance = (balance + (balance * 0.1));
+	}
+	
+	private double balance;
+	private double deposit;
+}

@@ -1,0 +1,57 @@
+package Test5;
+
+import java.util.Random;
+import java.util.Scanner;
+
+public class YangLu {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		//Yang Lu
+		
+		Scanner input = new Scanner(System.in);
+		
+		System.out.println("Lottery/Random Number Program\nWhat is the number you are slecting?");
+		int user = input.nextInt();
+		
+		Random rn = new Random();
+		
+		int num[] = new int[10001];
+		int appear = 0, numcount = 0;
+		
+		for(int count = 1; count<=10000; count++)
+		{
+			num[count] = rn.nextInt(50);
+		}
+		
+		for(int count = 1; count<=10000; count++)
+		{
+			if(num[count] == user)
+			{
+				appear++;
+			}
+			
+		}
+		
+		for(int count = 1; count<=50; count++)
+		{
+			if(num[count] == count)
+			{
+				numcount ++;
+			}
+			else
+			{
+				System.out.println(count + ":  " + numcount);
+			}
+			
+		}
+		System.out.println("\nYour number " + user + " appeared " + appear + " times.");
+		
+		
+	}
+
+}

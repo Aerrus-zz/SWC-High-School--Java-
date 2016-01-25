@@ -1,0 +1,33 @@
+package account;
+
+public class bankACCOUNT {
+	
+	public bankACCOUNT(int inBalance)
+	{
+		balance = inBalance;
+	}
+		
+	public void setDeposit(int deposit)
+	{
+		this.deposit = deposit;
+	}
+	
+	public void addBalance()
+	{
+		this.balance = (deposit + balance);
+	}
+	
+	public int getBalance()
+	{
+		return balance;
+	}
+		
+	
+	
+	
+	private int balance;
+	private int deposit;
+	
+	
+
+}

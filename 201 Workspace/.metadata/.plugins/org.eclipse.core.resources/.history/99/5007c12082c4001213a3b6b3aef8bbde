@@ -1,0 +1,29 @@
+package e3;
+
+import java.awt.Graphics;
+import java.awt.Graphics2D;
+import java.awt.Rectangle;
+import javax.swing.JPanel;
+import javax.swing.JComponent;
+import javax.swing.*;
+
+public class DrawRectangleTranslation {
+
+	public void paintComponent(Graphics g){
+
+		Rectangle box1 = new Rectangle(0,0,2,3);
+		Rectangle box2 = new Rectangle(2,0,2,3);
+		Rectangle box3 = new Rectangle(0,3,2,3);
+		Rectangle box4 = new Rectangle(2,3,2,3);
+		
+		Graphics2D g2 = (Graphics2D) g;
+		
+		g2.draw(box1);
+		g2.draw(box2);
+		g2.draw(box3);
+		g2.draw(box4);
+		
+		
+	}
+	
+}

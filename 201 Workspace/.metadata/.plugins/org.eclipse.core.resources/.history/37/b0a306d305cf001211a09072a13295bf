@@ -1,0 +1,24 @@
+package e3;
+
+import account.bankACCOUNT;
+
+public class stackingINTEREST {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		//Yang Lu
+		
+		bankACCOUNT momsavings = new bankACCOUNT(1000,0);
+		
+		momsavings.addInterest();
+		momsavings.addBalance();
+		
+		System.out.println(momsavings.getBalance())
+		
+	}
+
+}

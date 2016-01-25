@@ -1,0 +1,45 @@
+package Test5;
+
+import java.util.Random;
+import java.util.Scanner;
+
+public class YangLu {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		//Yang Lu
+		
+		Scanner input = new Scanner(System.in);
+		
+		System.out.println("Enter your number.");
+		int user = input.nextInt();
+		
+		Random rn = new Random();
+		
+		int num[] = null;
+		int appear = 0;
+		
+		for(int count = 0; count<=50; count++)
+		{
+			num[count] = rn.nextInt(50);
+		}
+		
+		for(int count = 0; count<=50; count++)
+		{
+			if(num[count] == count)
+			{
+				appear++;
+			}
+			System.out.println("The number " + count + " appeared " + appear);
+		}
+		
+		System.out.println("Your number: " + user + " appeared " + appear + " times.");
+		
+		
+	}
+
+}

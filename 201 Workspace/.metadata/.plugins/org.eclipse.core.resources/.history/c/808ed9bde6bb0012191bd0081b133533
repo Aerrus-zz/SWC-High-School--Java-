@@ -1,0 +1,25 @@
+package DEMO;
+
+import java.util.Scanner;
+
+public class DEMO {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		String name = "My name is...";
+		int a = 0 , b = 1;
+		for(a = 0; a<(name.length()); a++)
+		{
+			b = a + 1;
+			System.out.println(name.subSequence(a, b));
+		}
+		
+			
+		
+	}
+
+}

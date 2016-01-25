@@ -1,0 +1,57 @@
+package Projects;
+
+import java.util.Scanner;
+
+public class donutHAPPINESSday {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		//Yang Lu
+		
+		Scanner input = new Scanner(System.in);
+		
+		double rating = 2;
+
+		
+		
+		System.out.println("How many student's are been polled for these DELICIOUS JELLY DONUTS?");
+		int num = input.nextInt();
+		int count;
+		
+		for(count = 0; count<num; count++)
+		{	
+			System.out.println("How much did you like our jolly golly belly filling donuts?\nPlease rate on a scale of 1-4!!!");
+			rating = input.nextDouble();
+			
+			
+			
+			if(rating<1 || rating>4)
+			{
+				System.out.println("Only enter a value between 1 and 4!!!\nPlease try again.");
+				count--;
+			}
+			else
+			{
+				System.out.println("Thank you for your feed back!\nEnjoy the rest of your day!\n\n");
+				int tot[] = {};
+				tot[count] += rating;
+				for(int tcount=0; tcount<tot.length; tcount++)
+				{
+					System.out.println(tot[tcount]);
+				}
+			}
+		}
+		
+
+			
+		
+		System.out.println("That's everyone!");
+		
+		
+	}
+
+}

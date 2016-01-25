@@ -1,0 +1,23 @@
+package Project;
+
+public class tester {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		//Yang Lu
+		
+		Circle cirl = new Circle(35.5);
+		System.out.println(cirl.diameter());
+		
+		
+		
+		/*
+		 * 71.0
+		 */
+	}
+
+}

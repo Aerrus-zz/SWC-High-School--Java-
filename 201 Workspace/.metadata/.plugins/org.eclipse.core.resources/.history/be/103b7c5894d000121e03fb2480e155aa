@@ -1,0 +1,20 @@
+package Project;
+
+public class Circle {
+
+	public Circle(double inRadius)
+	{
+		radius = inRadius;
+		
+	}
+	
+	public double diameter()
+	{
+		return (radius * radius * Math.PI);
+	}
+	
+	private double radius;
+	private double diameter;
+	
+	
+}

@@ -1,0 +1,51 @@
+package Projects;
+
+import java.util.Random;
+import java.util.Scanner;
+
+public class diceGENERATOR {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		//Yang Lu
+		
+		Scanner input = new Scanner(System.in);
+		
+		Random rn = new Random();
+		int num[] = new int[1001], extreme[] = new int[7];
+		int numcount = 0;
+		
+		//Assignment of random numbers to the array
+		for(int count = 0; count<=1000; count++)
+		{
+			num[count] = rn.nextInt(6);
+		}
+		
+		
+		int times = 1;
+		for(int count = 0; count<6; count++)
+		{
+			for(times = 1; times<=1000; times++)
+			{
+				if(num[times] == count)
+				{
+					numcount ++;
+				}
+			}
+			extreme[count] = numcount;
+			System.out.println((count+1) + " : " + numcount);
+			numcount = 0;
+		}
+		
+		/*
+
+		 */
+		
+		
+	}
+
+}

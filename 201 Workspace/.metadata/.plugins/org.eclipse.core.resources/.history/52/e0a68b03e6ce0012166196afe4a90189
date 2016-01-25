@@ -1,0 +1,165 @@
+package Test5;
+
+import java.util.Random;
+import java.util.Scanner;
+
+public class YangLu {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		//Yang Lu
+		
+		//Declare the scanner early on
+		Scanner input = new Scanner(System.in);
+		
+		//MakinG the number selection
+		System.out.println("Lottery/Random Number Program\nWhat is the number you are selecting?");
+		int user = input.nextInt();
+		
+		//Everything I need is declared
+		Random rn = new Random();
+		int num[] = new int[10001], extreme[] = new int[51];
+		int appear = 0, numcount = 0, most1 = 0, most2 = 0, least1 = 10000, least2 = 10000, mostnum = 1, leastnum = 1;
+		
+		//Assignment of random numbers to the array
+		for(int count = 0; count<=10000; count++)
+		{
+			num[count] = rn.nextInt(50);
+		}
+		
+		
+		//Counts how many times the user's number appears
+		for(int count = 1; count<=10000; count++)
+		{
+			if(num[count] == user)
+			{
+				appear++;
+			}
+		}
+		
+		//Counting of all the other numbers
+		//Assigning number of times each number appears in an array
+		//Displaying how many times each number comes up
+		int times = 1;
+		for(int count = 0; count<50; count++)
+		{
+			for(times = 1; times<=10000; times++)
+			{
+				if(num[times] == count)
+				{
+					numcount ++;
+				}
+			}
+			extreme[count] = numcount;
+			System.out.println((count+1) + " : " + numcount);
+			//Resetting the count
+			numcount = 0;
+		}
+		
+		//Detecting least number of times. The value comes up only when a less number is cycled through. It also recorsd which number it is by letting the count number go through
+		for(int count = 0; count<50; count++)
+		{
+			least2 = extreme[count];
+			if (least2 < least1)
+			{
+				leastnum = count;
+				least1 = least2;
+			}
+		}
+		
+		//Detecting most number of times. The value comes up only when a larger number is cycled through. It also records which number it is by letting the count number go through
+		for(int count = 0; count<50; count++)
+		{
+			most2 = extreme[count];
+			if (most2 > most1)
+			{
+				mostnum = count;
+				most1 = most2;
+			}
+		}
+		
+		for(int count = 0; count < pg.length; count++)
+		{
+			if(num[count] == user)
+			{
+				System.out.println("Your number " + user + " appeared first at " + (count+1));
+				break;
+			}
+				
+		}
+		
+		//Print out of the major final results
+		System.out.println("\nYour number " + user + " appeared " + appear + " times.");
+		System.out.println("The most frequent appearances was " + mostnum + " at "+ most1);
+		System.out.println("The least frequent appearances was " + leastnum + " at "+ least1);
+		System.out.println("\nThis program was brought to you by Yang Lu");
+		
+		/*
+Lottery/Random Number Program
+What is the number you are selecting?
+12
+1 : 189
+2 : 215
+3 : 222
+4 : 208
+5 : 191
+6 : 205
+7 : 190
+8 : 179
+9 : 201
+10 : 183
+11 : 217
+12 : 208
+13 : 201
+14 : 205
+15 : 202
+16 : 197
+17 : 210
+18 : 206
+19 : 185
+20 : 190
+21 : 217
+22 : 203
+23 : 201
+24 : 202
+25 : 222
+26 : 219
+27 : 182
+28 : 198
+29 : 192
+30 : 179
+31 : 206
+32 : 203
+33 : 170
+34 : 191
+35 : 206
+36 : 200
+37 : 214
+38 : 208
+39 : 210
+40 : 180
+41 : 190
+42 : 201
+43 : 221
+44 : 213
+45 : 180
+46 : 207
+47 : 189
+48 : 199
+49 : 207
+50 : 186
+
+Your number 12 appeared 201 times.
+The most frequent appearances was 2 at 222
+The least frequent appearances was 32 at 170
+
+This program was brought to you by Yang Lu
+
+		 */
+	}
+
+}

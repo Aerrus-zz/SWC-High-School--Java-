@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename Java project &apos;If&apos; to &apos;ifELSE&apos;&#x0D;&#x0A;- Original element: &apos;If&apos;&#x0D;&#x0A;- Renamed element: &apos;If&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename Java project &apos;If&apos;" flags="7" id="org.eclipse.jdt.ui.rename.java.project" input="=If" name="ifELSE" references="true" stamp="1366986261395" version="1.0"/>
+</session>
